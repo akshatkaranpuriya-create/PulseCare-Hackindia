@@ -1,0 +1,14 @@
+{
+  "name": "pulsecare",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PulseCare - Low-bandwidth rural telemedicine with adaptive WebRTC and offline triage",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
